@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<!-- Boxicons -->
+	<link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+	<!-- My CSS -->
+	<link rel="stylesheet" href="admin.css">
+
+	<title>Admin Panel</title>
+</head>
+<body>
+
+
+	<!-- SIDEBAR -->
+	<section id="sidebar">
+		<a href="#" class="brand">
+			<i class='bx bxs-smile'></i>
+			<span class="text">TrainLab</span>
+		</a>
+		<ul class="side-menu top">
+			<li class="active">
+				<a href="#">
+					<i class='bx bxs-dashboard' ></i>
+					<span class="text">Dashboard</span>
+				</a>
+			</li>
+			<li>
+				<a href="#">
+					<i class='bx bxs-doughnut-chart' ></i>
+					<span class="text">Analytics</span>
+				</a>
+			</li>
+			<li>
+				<a href="#">
+					<i class='bx bxs-group' ></i>
+					<span class="text">Team</span>
+				</a>
+			</li>
+		</ul>
+		<ul class="side-menu">
+			<li>
+				<a href="#">
+					<i class='bx bxs-cog' ></i>
+					<span class="text">Settings</span>
+				</a>
+			</li>
+			<li>
+				<a href="#" class="logout">
+					<i class='bx bx-log-out'></i>
+					<span class="text">Logout</span>
+				</a>
+			</li>
+		</ul>
+	</section>
+	<!-- SIDEBAR -->
+
+
+
+	<!-- CONTENT -->
+	<section id="content">
+		<!-- NAVBAR -->
+		<nav>
+			<i class='bx bx-menu' ></i>
+			<form action=""></form>
+			<a href="#" class="notification">
+				<i class='bx bxs-bell' ></i>
+				<span class="num">8</span>
+			</a>
+			<a href="#" class="profile">
+				<img src="img/Profile.jpg">
+			</a>
+		</nav>
+		<!-- NAVBAR -->
+
+		<!-- MAIN -->
+		<main>
+			<div class="head-title">
+				<div class="left">
+					<h1>Dashboard</h1>
+					<ul class="breadcrumb">
+						<li>
+							<a href="#">Dashboard</a>
+						</li>
+						<li><i class='bx bx-chevron-right' style="color: white;"></i></li>
+						<li>
+							<a class="active" href="#">Home</a>
+						</li>
+					</ul>
+				</div>
+				<a href="#" class="btn-download">
+					<i class='bx bx-check'></i>
+					<span class="text">Generate</span>
+				</a>
+			</div>
+
+			<ul class="box-info">
+				<li>
+					<i class='bx bxs-calendar-check' ></i>
+					<span class="text">
+						<h3>Batch</h3>
+						<p>
+							<select name="batch">
+								<option value="select">Select</option>
+								<option value="2020">2020-2024</option>
+								<option value="2021">2021-2025</option>
+								<option value="2022">2022-2026</option>
+							</select>
+						</p>
+					</span>
+				</li>
+				<li>
+					<i class='bx bxs-building-house'></i>
+					<span class="text">
+						<h3>Department</h3>
+						<p>
+							<select name="dept">
+								<option value="select">Select</option>
+								<option value="AI">AI&DS</option>
+								<option value="CSE">CSE</option>
+								<option value="IT">IT</option>
+							</select>
+						</p>
+					</span>
+				</li>
+				<li>
+					<i class='bx bxs-user-pin'></i>
+					<span class="text">
+						<h3>Year</h3>
+						<p>
+							<select name="year">
+								<option value="select">Select</option>
+								<option value="1">1</option>
+								<option value="2">2</option>
+								<option value="3">3</option>
+							</select>
+						</p>
+					</span>
+				</li>
+				<li>
+					<i class='bx bxs-book'></i>
+					<span class="text">
+						<h3>Semester</h3>
+						<p>
+							<select name="sem">
+								<option value="select">Select</option>
+								<option value="odd">Odd</option>
+								<option value="even">Even</option>
+							</select>
+						</p>
+					</span>
+				</li>
+			</ul>
+
+
+			<div class="table-data">
+				<div class="order">
+					<div class="head">
+						<h3>Student Mark List</h3>
+						<i class='bx bx-search' ></i>
+						<i class='bx bx-filter' ></i>
+					</div>
+					<table>
+						<thead>
+							<tr>
+								<th>Student Name</th>
+								<th>Department</th>
+								<th>Batch</th>
+								<th>Year</th>
+								<th>Semester</th>
+								<th>Courses</th>
+								<th style="padding-left: 20px;">Action</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>
+									<img src="img/Profile.jpg">
+									<p>Yazeen</p>
+								</td>
+								<td>AI&DS</td>
+								<td>2021-2025</td>
+								<td>Second</td>
+								<td>IV</td>
+								<td>HTML</td>
+								<td class="action"><button class="edit-btn"><i class='bx bxs-edit'></i>Edit</button><button class="delete-btn"><i class='bx bxs-trash' ></i>Delete</button></td>
+							</tr>
+							<tr>
+								<td>
+									<img src="img/Profile.jpg">
+									<p>Vaitheeshvar</p>
+								</td>
+								<td>AI&DS</td>
+								<td>2021-2025</td>
+								<td>Second</td>
+								<td>IV</td>
+								<td>HTML</td>
+								<td class="action"><button class="edit-btn"><i class='bx bxs-edit'></i>Edit</button><button class="delete-btn"><i class='bx bxs-trash' ></i>Delete</button></td>
+							</tr>
+							<tr>
+								<td>
+									<img src="img/Profile.jpg">
+									<p>Niranjan</p>
+								</td>
+								<td>AI&DS</td>
+								<td>2021-2025</td>
+								<td>Second</td>
+								<td>IV</td>
+								<td>HTML</td>
+								<td class="action"><button class="edit-btn"><i class='bx bxs-edit'></i>Edit</button><button class="delete-btn"><i class='bx bxs-trash' ></i>Delete</button></td>
+							</tr>
+							<tr>
+								<td>
+									<img src="img/Profile.jpg">
+									<p>Pranavesh</p>
+								</td>
+								<td>AI&DS</td>
+								<td>2021-2025</td>
+								<td>Second</td>
+								<td>IV</td>
+								<td>HTML</td>
+								<td class="action"><button class="edit-btn"><i class='bx bxs-edit'></i>Edit</button><button class="delete-btn"><i class='bx bxs-trash' ></i>Delete</button></td>
+							</tr>
+							<tr>
+								<td>
+									<img src="img/Profile.jpg">
+									<p>Naresh</p>
+								</td>
+								<td>AI&DS</td>
+								<td>2021-2025</td>
+								<td>Second</td>
+								<td>IV</td>
+								<td>HTML</td>
+								<td class="action"><button class="edit-btn"><i class='bx bxs-edit'></i>Edit</button><button class="delete-btn"><i class='bx bxs-trash' ></i>Delete</button></td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+		</main>
+		<!-- MAIN -->
+	</section>
+	<!-- CONTENT -->
+	
+
+	<script src="script.js"></script>
+</body>
+</html>
